@@ -1,7 +1,6 @@
 <div>
     <h2>Group 1 JavaScript Developers</h2>
-    <h3>Selected date is: <em ng-model='userInput'>{{dt | date:'fullDate' }}</em></h3>
-
+    <h3>Selected date is: <em>{{dt | date:'fullDate' }}</em></h3>
 
     <div style="display:inline-block; min-height:290px;">
         <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></uib-datepicker>
@@ -9,5 +8,6 @@
     <div class="row">
     	<a class="btn btn-info" ui-sref='#'>Show schedule</a>
     </div>
+    {{schedule}}
     <hr />
 </div>
